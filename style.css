@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: monospace;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+}
+
+section h2 {
+  font-size: 3rem;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+#rapid-proto .img-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  max-height: 90%;
+  max-width: 90%;
+  margin: auto;
+}
+
+#rapid-proto .img-grid #all-gasket {
+  margin: auto;
+  grid-row: span 2;
+}
+
+#rapid-proto .img-grid #all-gasket figcaption {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+#rapid-proto .img-grid img {
+  margin: auto;
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 6px;
+}
+
+#cast-mold .img-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 4fr 9fr;
+      grid-template-columns: 4fr 9fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  max-height: 90%;
+  max-width: 90%;
+  margin: auto;
+}
+
+#cast-mold .img-grid #cast {
+  margin: auto;
+  grid-row: span 2;
+}
+
+#cast-mold .img-grid #cast figcaption {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+#cast-mold .img-grid img {
+  margin: auto;
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 6px;
+}
+
+#heat-tool .img-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-height: 90%;
+  max-width: 90%;
+  margin: auto;
+}
+
+#heat-tool .img-flex figure {
+  max-width: 30%;
+}
+
+#heat-tool .img-flex img {
+  max-width: 100%;
+  margin: auto;
+  border-radius: 6px;
+}
