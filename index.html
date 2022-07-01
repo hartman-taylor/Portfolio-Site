@@ -5,22 +5,174 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
-        <title>Hartman Design Portfolio</title>
+        <title>Design Portfolio</title>
     </head>
     <body>
         <div class="main">
+            <section id="em-design">
+                <h2>Electro-Mechanical Design</h2>
+                <div class="img-flex">
+                    <iframe
+                        width="720"
+                        height="576"
+                        src="https://www.youtube.com/embed/PvPMMjmQgUM"
+                        title="Box Stacking Machine"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                    >
+                    </iframe>
+                    <div
+                        style="
+                            height: 80vh;
+                            max-width: 50vw;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                        "
+                    >
+                        <div
+                            style="
+                                max-width: 90%;
+                                max-height: 50vh;
+                                display: flex;
+                                justify-content: space-around;
+                            "
+                        >
+                            <img
+                                src="img/box-stack.png"
+                                style="
+                                    max-width: 43%;
+                                    max-height: 95%;
+                                    margin: auto;
+                                "
+                                alt=""
+                            />
+                            <img
+                                src="img/box-stack-side.png"
+                                style="
+                                    max-width: 43%;
+                                    max-height: 95%;
+                                    margin: auto;
+                                "
+                                alt=""
+                            />
+                        </div>
+
+                        <p style="width: 80%">
+                            All red parts (brackets, carriages, carts) were
+                            designed in SolidWorks and 3D printed. The set of
+                            motors mounted on elevated platforms made from
+                            2x4's, control the movement in the horizontal
+                            direction. The carriages on this axis attatch to
+                            carts with bearings on the bottom in order to
+                            smoothly support the vertical axes. Additionally,
+                            these carts house the motors used for movement along
+                            the vertical axes. All motion is acheived with
+                            stepper driven belts mounted to alimunum rails. The
+                            blocks are picked up with an electromagnet fashioned
+                            out of a bolt wrapped in copper wire; this requires
+                            around 3.5 Amps of current from an external power
+                            source, which is toggle on and off via relay. This
+                            toggling along with all other motor control is done
+                            with a microcontroller, commanded with GCode.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="em-components">
+                <div style="display: flex; max-height: 50vh; padding: 30px">
+                    <img
+                        src="img/cart.png"
+                        style="
+                            max-height: 100%;
+                            max-width: 20vw;
+                            height: 40vh;
+                            width: auto;
+                        "
+                        alt=""
+                    />
+                    <p style="width: 20vw; margin: 10px">
+                        <b>Cart</b> houses the motors for the vertical axes,
+                        along with providing support for the vertical alimunum
+                        bars, and mounting points for the bearings which allow
+                        for the entire aparatus to slid along the horizontal
+                        axes. The four screw holes secure the motor to the part.
+                        Two bearings were mounted on the bottom, using the two
+                        holes shown along with a third bearing and hole, which
+                        are obstructed in the current view.
+                    </p>
+                    <div style="width: 10vw"></div>
+                    <img
+                        src="img/bar-mount.png"
+                        style="
+                            max-height: 100%;
+                            max-width: 20vw;
+                            height: 45vh;
+                            width: auto;
+                        "
+                        alt=""
+                    />
+                    <p style="width: 20vw; margin: 10px">
+                        <b>Bar Mount</b> holds the horizontal axes off of the
+                        ground, as well as keeping them stable and offering a
+                        mounting point for the belt bearings.
+                    </p>
+                </div>
+                <div style="display: flex; max-height: 50vh; margin-left: 30px">
+                    <img
+                        src="img/motor-mount.png"
+                        style="
+                            max-height: 100%;
+                            max-width: 25vw;
+                            height: 40vh;
+                            width: auto;
+                        "
+                        alt=""
+                    />
+                    <p style="width: 16vw; margin: 10px">
+                        <b>Motor Mount</b> houses the motors for the horizontal
+                        axis. The top screw holes secure the motor to the part
+                        and the bottom screw holes secure the part to the
+                        ground.
+                    </p>
+                    <div style="width: 5vw"></div>
+                    <img
+                        src="img/slider.png"
+                        style="
+                            max-height: 100%;
+                            max-width: 30vw;
+                            height: 45vh;
+                            width: auto;
+                        "
+                        alt=""
+                    />
+                    <p style="width: 16vw; margin: 10px">
+                        <b>Carriage</b> moves along the aluminum bars using the
+                        grove at the bottom. The ridged indent is used to
+                        attatch to the belt and the open groove allows the belt
+                        to pass through in the other direction unobstructed. The
+                        sqaure hole to the right is fitted to hold one of the
+                        aluminium rails.
+                    </p>
+                </div>
+            </section>
             <section id="rapid-proto">
                 <h2>Rapid Prototyping</h2>
                 <div class="img-grid">
                     <figure id="all-gasket">
                         <img src="img/all-gasket.jpg" alt="" />
                         <figcaption>
-                            A metal part was measured in order to build a
-                            corresponding gasket in SolidWorks. The gasket was
-                            then manufactured using three different mehtods as
-                            shown above.
+                            I used a pair of calipers to measure a metal part. I
+                            used these measurements in order to construct a
+                            corresponding gasket in SolidWorks. After
+                            dimensioning the gasket correctly, I manufactured it
+                            using three different methods: CNC machining, laser
+                            cutting, and 3D printing.
                         </figcaption>
                     </figure>
+
                     <figure>
                         <img src="img/gasket-sketch.png" alt="" />
                         <figcaption>Orignal part and sketch</figcaption>
@@ -29,30 +181,67 @@
                         <img src="img/gasket-cad.png" alt="" />
                         <figcaption>CAD Rendering</figcaption>
                     </figure>
+                    <figure>
+                        <img src="img/gasket-3D.png" alt="" />
+                        <figcaption>Fitted Gasket</figcaption>
+                    </figure>
                 </div>
             </section>
             <section id="cast-mold">
                 <h2>Casting and Molding</h2>
                 <div class="img-grid">
-                    <figure>
-                        <img src="img/stamp-top.png" alt="" />
-                    </figure>
+                    <div class="stamp">
+                        <figure>
+                            <img src="img/stamp-top.png" alt="" />
+                        </figure>
+
+                        <figure>
+                            <img src="img/stamp-silicon.png" alt="" />
+                        </figure>
+                        <p>
+                            I designed a mold for a stamp in SolidWorks then 3D
+                            printed it and cast a silicon model with it. After
+                            testing the silicon stamp, I designed and 3D printed
+                            a tow piece enclosure for the silicon. Finally, I
+                            attatched the two pieces with glue.
+                        </p>
+                    </div>
 
                     <figure id="cast">
                         <img src="img/casting.png" alt="" />
                         <figcaption>
-                            A clay model was submerged in silicon in order to
-                            create a soft mold. This mold was then filled with
-                            plaster to create a copy of the original model.
+                            I formed a bunch of clay into the desired shaped and
+                            then submerged it in silicon in order to create a
+                            soft mold. After it dried I removed the mold from
+                            its foam board container and filled it with plaster
+                            to create a copy of the original model.
                         </figcaption>
-                    </figure>
-                    <figure>
-                        <img src="img/stamp-silicon.png" alt="" />
                     </figure>
                 </div>
             </section>
             <section id="heat-tool">
                 <h2>Heat Tool Design</h2>
+                <p>
+                    A 20 gauge nichrome wire heats up enough to cut foam when
+                    4.3 Amps of current is passed through it. This fact can be
+                    utilized to make a heat tool which can carve things out of
+                    foam. However the wire becomes much too hot to hold and if
+                    the ends are touched together it short circuits. To solve
+                    these problems we can make a heat proof enclosure with an
+                    on/off switch. First I designed a two piece enclosure in
+                    SolidWorks. The two pieces attatch with pins and incluse
+                    holes for the wires and switch, in order to maxamize ease of
+                    repair and disassembly. I then designed a custom mold to fit
+                    in the designated space in the enclosure. After 3D printing
+                    the enclosure and mold, I created the main nichrome wire
+                    piece by bending 6 inches of nichrome wire into the correct
+                    shape and attatching copper wire leads to the ends. I then
+                    cast around it in the mold with epoxy. The mold itself is
+                    designed to be part of the final product rather than being
+                    peeled off. Finally I put all of the components together and
+                    soldered the wired connections. It successfully cut through
+                    foam after testing.
+                </p>
                 <div class="img-flex">
                     <figure>
                         <img src="img/heat-tool.png" alt="" />
@@ -64,8 +253,12 @@
                         <figcaption>Individual Sketch</figcaption>
                     </figure>
 
-                    <figure>
-                        <img src="img/group-sketch.png" alt="" />
+                    <figure style="width: 25%">
+                        <img
+                            src="img/group-sketch.png"
+                            style="height: 80%; max-height: 80%"
+                            alt=""
+                        />
                         <figcaption>Group Sketch</figcaption>
                     </figure>
                 </div>
@@ -75,7 +268,14 @@
                 <div class="img-flex">
                     <figure>
                         <img src="img/mechanism1.png" alt="" />
-                        <figcaption></figcaption>
+                        <figcaption>
+                            This mechanism consists of four bars connected by
+                            pin joints. Although all the joints rotate in a
+                            circle respective to other joints, if a connection
+                            is made in the center of one of the members, a
+                            smooth non-circular motion can be acheived, as shown
+                            in red.
+                        </figcaption>
                     </figure>
 
                     <figure>
@@ -84,17 +284,55 @@
                     </figure>
                 </div>
             </section>
+            <section id="hot-plate">
+                <h2>Hot Plate</h2>
+                <div class="img-flex">
+                    <figure width="30%">
+                        <img
+                            src="img/hot-plate.png"
+                            style="width: 70%"
+                            alt=""
+                        />
+                        <figcaption style="width: 70%">
+                            Certain plastics can be melted at rather low
+                            temperatures (~100 degrees Celcius) and then be
+                            molded and cooled into a specific shape. The melting
+                            process for this plastic often includes having to
+                            boil water, submerge the plastic, and remove it
+                            after it has softened; this requires a large amount
+                            of tools and lengthy clean up process. To improve
+                            upon this, I threaded nichrome wire through a
+                            silicon mold in order to make a hotplate. After
+                            making an aluminium plate with a non conductive
+                            bottom out of foil and tape, I was able to
+                            successfully melt the plastic by running current
+                            through the nichrome wire and setting the plate on
+                            top.
+                        </figcaption>
+                    </figure>
+                    <figure style="width: 70%">
+                        <img
+                            src="img/hot-plate-sketch.png"
+                            style="width: 90%"
+                            alt=""
+                        />
+                        <figcaption><b>Hotplate sketch</b></figcaption>
+                    </figure>
+                </div>
+            </section>
             <section id="misc">
                 <h2>Miscellaneous</h2>
                 <div class="img-flex">
                     <figure>
                         <img src="img/phone-stand.png" alt="" />
-                        <figcaption>Phone stand</figcaption>
-                    </figure>
-
-                    <figure>
-                        <img src="img/hot-plate.png" alt="" />
-                        <figcaption>Hot plate</figcaption>
+                        <figcaption>
+                            <b>Phone Stand</b>
+                            I first scored a sheet of acrylic into roughly a 2x5
+                            inch rectangle; then I used a clamp to break along
+                            the cuts. After that I used a heat gun to heat up
+                            and bend the acrylic into the desired shape.
+                            Finally, I used a file to deburr the edges.
+                        </figcaption>
                     </figure>
                 </div>
             </section>
