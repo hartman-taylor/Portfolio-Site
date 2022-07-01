@@ -180,13 +180,27 @@ img {
 }
 
 #mechanics .img-flex figure {
-  max-width: 45%;
+  max-width: 50%;
   position: relative;
 }
 
 #mechanics .img-flex figure img {
   max-width: 100%;
   max-height: 100%;
+}
+
+#mechanics2 .img-flex figure {
+  max-width: 45%;
+  max-height: 90%;
+  position: relative;
+}
+
+#mechanics2 .img-flex figure img {
+  display: block;
+  max-height: 70%;
+  max-width: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #misc .img-flex figure {
