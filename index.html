@@ -61,12 +61,26 @@
                         </div>
 
                         <p style="width: 80%">
-                            All red parts (brackets, carriages, carts) were
-                            designed in SolidWorks and 3D printed. The set of
+                            In order to demostrate linear movement in a machine
+                            with 2.5 degrees of freedom, I aimed to make a
+                            machine that could stack blocks. Initially, I was
+                            worried about having to design too many parts, but
+                            after thinking it through, I realized if designed
+                            properly, I only needed to design 4 parts; I could
+                            then use the same parts in multiple different
+                            places. I was supplied with aliminium rails and
+                            stepper motors, so I designed the parts around the
+                            dimensions of those components. All red parts
+                            (brackets, carriages, carts) were designed in
+                            SolidWorks and 3D printed; Explination of each
+                            individual part is on the next page. The set of
                             motors mounted on elevated platforms made from
                             2x4's, control the movement in the horizontal
-                            direction. The carriages on these axes attatch to
-                            carts with bearings on the bottom in order to
+                            direction; I completed all of the parts for
+                            horizontal movement first, to make sure everything
+                            worked as planned. I then moved to the vertical
+                            axes. The carriages on the horizontal axes attatch
+                            to carts with bearings on the bottom in order to
                             smoothly support the vertical axes. Additionally,
                             these carts house the motors used for movement along
                             the vertical axes. All motion is acheived with
@@ -76,7 +90,12 @@
                             around 3.5 Amps of current from an external power
                             source, which is toggle on and off via relay. This
                             toggling along with all other motor control is done
-                            with a microcontroller, commanded with GCode.
+                            with a microcontroller, commanded with GCode. The
+                            final product worked as expected (demonstrated in
+                            video to the left). It successfully had 2.5 degrees
+                            of freedom, the first two being movement in the
+                            horizontal and vertical directions; The third was
+                            the toggling of the electromagnet.
                         </p>
                     </div>
                 </div>
@@ -98,10 +117,14 @@
                         along with providing support for the vertical alimunum
                         bars, and mounting points for the bearings which allow
                         for the entire aparatus to slide along the horizontal
-                        axes. The four screw holes secure the motor to the part.
-                        Two bearings were mounted on the bottom, using the two
-                        holes shown along with a third bearing and hole, which
-                        are obstructed in the current view.
+                        axes. The idea here was to reduce friction with the
+                        ground as much as possible, while holding all the
+                        necissary components. The four screw holes secure the
+                        motor to the part. Two bearings were mounted on the
+                        bottom, using the two holes shown along with a third
+                        bearing and hole, which are obstructed in the current
+                        view. Althought the wheels should have been built with a
+                        bit more support, the part functioned as expected.
                     </p>
                     <div style="width: 10vw"></div>
                     <img
@@ -115,9 +138,16 @@
                         alt=""
                     />
                     <p style="width: 20vw; margin: 10px">
-                        <b>Bar Mount</b> holds the horizontal axes off of the
-                        ground, as well as keeping them stable and offering a
-                        mounting point for the belt bearings.
+                        <b>Bar Mount</b> is designed to hold the horizontal axes
+                        off of the ground, as well as keeping them stable and
+                        offering a mounting point for the belt bearings. I added
+                        the notch in the inside to further support the bar from
+                        sliding withing the square, which had to be designed
+                        with a fairly large tolerance due to the uncertainty and
+                        inaccuracy of the 3D printed supports. This piece
+                        successfully held the axes in place securely, while
+                        still having enough tolerance to be slipped on and off
+                        when needed.
                     </p>
                 </div>
                 <div style="display: flex; max-height: 50vh; margin-left: 30px">
@@ -132,10 +162,15 @@
                         alt=""
                     />
                     <p style="width: 16vw; margin: 10px">
-                        <b>Motor Mount</b> houses the motors for the horizontal
-                        axis. The top screw holes secure the motor to the part
-                        and the bottom screw holes secure the part to the
-                        ground.
+                        <b>Motor Mount</b> aims to house the motors for the
+                        horizontal axis. The top screw holes secure the motor to
+                        the part and the bottom screw holes secure the part to
+                        the ground. I initially thought that I should enclose
+                        all 4 sides; but after beginning the design, I realized
+                        it would be easier for wire management and easy of
+                        assembly to leave one side open. The part worked as
+                        intended and was stong enough to keep the motor from
+                        moving undesirably.
                     </p>
                     <div style="width: 5vw"></div>
                     <img
@@ -149,12 +184,15 @@
                         alt=""
                     />
                     <p style="width: 16vw; margin: 10px">
-                        <b>Carriage</b> moves along the aluminum bars using the
-                        grove at the bottom. The ridged indent is used to
-                        attatch to the belt and the open groove allows the belt
-                        to pass through in the other direction unobstructed. The
-                        sqaure hole to the right is fitted to hold one of the
-                        aluminium rails.
+                        <b>Carriage</b> is intended to move along the aluminum
+                        bars using the grove at the bottom. The ridged indent is
+                        used to attatch to the belt and the open groove allows
+                        the belt to pass through in the other direction
+                        unobstructed. The sqaure hole to the right is fitted to
+                        hold one of the aluminium rails; This hole ended up
+                        fitting very well, as it was loose enough to slide
+                        around when force was applied, but not so loose that the
+                        rails jiggled around.
                     </p>
                 </div>
             </section>
@@ -164,12 +202,27 @@
                     <figure id="all-gasket">
                         <img src="img/all-gasket.jpg" alt="" />
                         <figcaption>
-                            I used a pair of calipers to measure a metal part. I
-                            used these measurements in order to construct a
+                            In order to seal a connection between parts, a
+                            gasket is often used. I was supplied with a custom
+                            metal part with several holes and pins. I was tasked
+                            with the challenge of designing a gasket which fit
+                            the metal within a margin of 0.005 inches. I
+                            initially thought this would be harder than it was,
+                            because I was not aware of the high level of
+                            precision of the calipers; After using a pair of
+                            calipers to measure and sketch the metal part, I
+                            used the measurements in order to construct a
                             corresponding gasket in SolidWorks. After
                             dimensioning the gasket correctly, I manufactured it
                             using three different methods: CNC machining, laser
-                            cutting, and 3D printing.
+                            cutting, and 3D printing. The gasket fit the piece
+                            within the desired tolerance and feeling around the
+                            edges was almost perfectly smooth. The CNC and Laser
+                            Cut versions were slightly better than the 3D
+                            printed one, simply because the precision of these
+                            machines is better than that of a 3D printer;
+                            additionally, the PVC is a lot smoother than the
+                            extruded PLA.
                         </figcaption>
                     </figure>
 
@@ -192,7 +245,7 @@
             <section id="cast-mold">
                 <h2>Casting and Molding</h2>
                 <div class="img-grid">
-                    <div class="stamp" style="margin-top: 20px">
+                    <div class="stamp" style="margin-top: 10px">
                         <figure>
                             <img src="img/stamp-top.png" alt="" />
                         </figure>
@@ -201,22 +254,33 @@
                             <img src="img/stamp-silicon.png" alt="" />
                         </figure>
                         <p>
-                            I designed a mold for a stamp in SolidWorks then 3D
-                            printed it and cast a silicon model with it. After
-                            testing the silicon stamp, I designed and 3D printed
-                            a two piece enclosure for the silicon. Finally, I
-                            attatched the two pieces with glue.
+                            In order to practice casting and molding, I was
+                            tasked with making a stamp. I designed the mold for
+                            the stamp in SolidWorks then 3D printed it and cast
+                            a silicon model with it. After testing the silicon
+                            stamp, I designed and 3D printed a two piece
+                            enclosure for the silicon. Finally, I attatched the
+                            two pieces with glue. The final stamp worked well,
+                            as can be seen in the pictures above.
                         </p>
                     </div>
 
                     <figure id="cast">
                         <img src="img/casting.png" alt="" />
                         <figcaption>
-                            I formed a bunch of clay into the desired shaped and
-                            then submerged it in silicon in order to create a
-                            soft mold. After it dried I removed the mold from
-                            its foam board container and filled it with plaster
-                            to create a copy of the original model.
+                            I was tasked with making a shape out of clay and
+                            then replicating it in plaster. I thought out a plan
+                            to make a small box in order to make a mold. The
+                            cast the plaster in the mold. Starting off, I formed
+                            a bunch of clay into the desired shaped and then
+                            submerged it in silicon in order to create a soft
+                            mold. After it dried I removed the mold from its
+                            foam board container and filled it with plaster to
+                            create a copy of the original model. The copy was
+                            nearly identical to the original model; the only
+                            thing I would improve if I did it again would be to
+                            make sure a flat surface was facing the bottom of
+                            the mold, in order to avoid loss of features.
                         </figcaption>
                     </figure>
                 </div>
@@ -225,25 +289,31 @@
                 <h2>Heat Tool Design</h2>
                 <p>
                     A 20 gauge nichrome wire heats up enough to cut foam when
-                    4.3 Amps of current is passed through it. This fact can be
-                    utilized to make a heat tool which can carve things out of
-                    foam. However the wire becomes much too hot to hold and if
-                    the ends are touched together it short circuits. To solve
-                    these problems we can make a heat proof enclosure with an
-                    on/off switch. First I designed a two piece enclosure in
-                    SolidWorks. The two pieces attatch with pins and include
-                    holes for the wires and switch; this means they can be
-                    easily dissassembled, in order to maximize ease of repair
-                    and disassembly. I then designed a custom mold to fit in the
-                    designated space in the enclosure. After 3D printing the
-                    enclosure and mold, I created the main nichrome wire piece
-                    by bending 6 inches of nichrome wire into the correct shape
-                    and attatching copper wire leads to the ends. I then cast
-                    around it in the mold with epoxy. The mold itself is
+                    4.3 Amps of current is passed through it. My task was to
+                    utilize this fact to make a heat tool which can carve things
+                    out of foam. However the wire becomes much too hot to hold
+                    and if the ends are touched together it short circuits. To
+                    solve these problems I made a heat proof enclosure with an
+                    on/off switch. I thought 2 pieces would be ideal, for easy
+                    of assembly and repair. The idea of the switch was intended
+                    to make handling easier without worry of being shocked while
+                    messing with the leads. First I designed a two piece
+                    enclosure in SolidWorks. The two pieces attatch with pins
+                    and include holes for the wires and switch; this means they
+                    can be easily dissassembled, in order to maximize ease of
+                    repair and disassembly. I then designed a custom mold to fit
+                    in the designated space in the enclosure. After 3D printing
+                    the enclosure and mold, I created the main nichrome wire
+                    piece by bending 6 inches of nichrome wire into the correct
+                    shape and attatching copper wire leads to the ends. I then
+                    cast around it in the mold with epoxy. The mold itself is
                     designed to be part of the final product rather than being
                     peeled off. Finally I put all of the components together and
                     soldered the wired connections. It successfully cut through
-                    foam after testing.
+                    foam after testing. The only part of design I would change
+                    if I did it again would be to have supports on both sides of
+                    the nichrome loop; this way it would not move around as much
+                    when cutting.
                 </p>
                 <div class="img-flex">
                     <figure>
@@ -272,19 +342,27 @@
                     <figure>
                         <img src="img/mechanism1.png" alt="" />
                         <figcaption>
-                            <b>Four Bar Mechanism</b> consists of four bars
-                            connected by pin joints. Although all the joints
-                            rotate with constant radii respective to their pins,
-                            if a connection is made at an intermidiate point of
-                            one of the members, a smooth non-circular motion can
-                            be acheived, as shown in red.
+                            <b>Four Bar Mechanism</b> This type of mechanism is
+                            used for achieving various types of motion. My task
+                            was to use it to acheive smooth but not circular
+                            motion. I built this prototype in MathIllustrations.
+                            Although all the joints rotate with constant radii
+                            respective to their pins, if a connection is made at
+                            an intermidiate point of one of the members, a
+                            smooth non-circular motion is successfully acheived,
+                            as shown in red.
                         </figcaption>
                     </figure>
 
-                    <figure>
+                    <figure style="margin-left: 30px">
                         <img src="img/fourbar.gif" alt="" />
-                        <figcaption>
-                            <b>Four Bar Mechanism</b> using Solidworks Motion
+                        <figcaption style="width: 80%">
+                            <b>Four Bar Mechanism SolidWorks</b> In order to
+                            improve upon the previous design, I modeled it in
+                            Solidworks by connecting four bars of the correct
+                            proportions and then adding a motor in SolidWorks
+                            Motion. This sucessfully demonstartes the movement
+                            of each of the parts.
                         </figcaption>
                     </figure>
                 </div>
@@ -294,55 +372,149 @@
                     <figure>
                         <img src="img/mechanism2.png" alt="" />
                         <figcaption>
-                            <b>6 Bar Mechanism</b>
-                            achieves a similiar result as the 4 bar mechanism,
-                            but it allows for a more defined range of movement.
+                            <b>6 Bar Mechanism</b> Much like the four bar
+                            mechanism I designed this in MathIllustartions. It
+                            successfullly achieves a similiar result as the 4
+                            bar mechanism, but it allows for a more defined
+                            range of movement. This can be seen, by picturing a
+                            dot on any of the intermediate points of the
+                            mechanism.
                         </figcaption>
                     </figure>
                     <figure>
                         <img src="img/mechanism3.png" alt="" />
                         <figcaption>
-                            <b>Rotational Mechanism</b> can be used to moved the
-                            bar from the position on the left to the position on
-                            the right, when rotated around the center point (F).
+                            <b>Rotational Mechanism</b> In some cases there is
+                            no need for the complexity of 4 and 6 bar
+                            mechanisms. In order to avoid unneccissary
+                            complexity, I set out to design a mechanism that
+                            could move a bar from the position on the left to
+                            the position on the right, when rotated around the
+                            center point (F). I completed this task sucessfully,
+                            as can be seen in the image above.
                         </figcaption>
                     </figure>
                 </div>
             </section>
-            <section id="hot-plate">
-                <h2>Hot Plate</h2>
-                <div class="img-flex">
-                    <figure width="30%">
+            <section id="garbage">
+                <h2>Trash Can Mechanism</h2>
+                <div
+                    style="
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin: 30px;
+                        max-height: calc(100% - 60px);
+                    "
+                >
+                    <div style="width: 33%">
+                        <p>
+                            In order to practice mechanism design and create a
+                            trashcan that is easily usable from any angle, I
+                            aimed to design a trash can with a tray that
+                            transfered trash from the top into the can. I had to
+                            make sure that the tray would not flip over during
+                            the movement process; Additionally I had to make
+                            sure the tray did not collide with the can itself
+                            and that the connections were all in the body of the
+                            trash can. Initially I did not know how to go about
+                            this, but I soon realized I just needed to
+                            synthesisze a four bar mechanism that reached three
+                            key positions. The fourth bar is modeled not as a
+                            bar itself but as the distance between the two
+                            mounting points on the trash can. In class, I made
+                            an initial concept drawing in MathIllustrations,
+                            which can be seen below. This functioned relatively
+                            well, but some of the lengths needed minor
+                            adjustments. After making these adjustments, I began
+                            to build the pieces in SolidWorks. To the right is
+                            three pictures of the tray in the three key
+                            positions I used to contsruct the four bar
+                            mechanism. On the far right is the final product
+                            with the path of the tray traced out in Motion
+                            Study. As can be seen, the product acheived the task
+                            sucessfully. Tweaking the lengths ended up being the
+                            most time consuming part, as I had a bit of trouble
+                            transfering them precisesly from MathIllustrations
+                            to SolidWorks.
+                        </p>
+
                         <img
-                            src="img/hot-plate.png"
-                            style="width: 70%"
+                            src="img/init-sketch.png"
                             alt=""
+                            style="max-width: 70%; margin-top: 10px"
+                            ;
                         />
-                        <figcaption style="width: 70%">
-                            <b>Hot Plate</b> Certain plastics can be melted at
-                            rather low temperatures (~100 degrees Celcius) and
-                            then be molded and cooled into a specific shape. The
-                            melting process for this plastic often includes
-                            having to boil water, submerge the plastic, and
-                            remove it after it has softened; this requires a
-                            large amount of tools and lengthy clean up process.
-                            To improve upon this, I threaded nichrome wire
-                            through a silicon mold in order to make a hotplate.
-                            After making an aluminium plate with a non
-                            conductive bottom out of foil and tape, I was able
-                            to successfully melt the plastic by running current
-                            through the nichrome wire and setting the plate on
-                            top.
-                        </figcaption>
-                    </figure>
-                    <figure style="width: 70%">
+                        <p><b>Initial Concept</b></p>
+                    </div>
+                    <div
+                        style="
+                            width: 33%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: space-between;
+                            max-height: 85vh;
+                        "
+                    >
+                        <div
+                            style="
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-around;
+                                align-items: center;
+                                width: 60%;
+                            "
+                        >
+                            <p><b>Postion 1</b></p>
+                            <img
+                                src="img/pos1.png"
+                                alt=""
+                                style="max-height: 26vh; max-width: 20vh"
+                            />
+                        </div>
+                        <div
+                            style="
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-around;
+                                align-items: center;
+                                width: 60%;
+                            "
+                        >
+                            <img
+                                src="img/pos2.png"
+                                alt=""
+                                style="max-height: 26vh; max-width: 20vh"
+                            />
+                            <p><b>Postion 2</b></p>
+                        </div>
+                        <div
+                            style="
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-around;
+                                align-items: center;
+                                width: 60%;
+                            "
+                        >
+                            <p><b>Postion 3</b></p>
+                            <img
+                                src="img/pos3.png"
+                                alt=""
+                                style="max-height: 26vh; max-width: 20vh"
+                            />
+                        </div>
+                    </div>
+                    <div style="width: 33%">
                         <img
-                            src="img/hot-plate-sketch.png"
-                            style="width: 90%"
+                            src="img/trash-motion.png"
                             alt=""
+                            style="max-width: 90%; max-height: 90%"
                         />
-                        <figcaption><b>Hotplate sketch</b></figcaption>
-                    </figure>
+                        <p><b>Traced Path</b></p>
+                    </div>
                 </div>
             </section>
             <section id="trash">
@@ -364,13 +536,19 @@
                             style="max-width: 30vw; margin: auto"
                         />
                         <figcaption style="max-width: 30vw">
-                            <b>Redesign 1</b> features a hinged panel with a
-                            lock instead of the "drawer" style present on
-                            current trashcans. The flap is locked when not in
-                            use in order to keep animals out and trash in. The
-                            lock is released with a button on the flap.
-                            Additionally this flap can lock when the trashcan is
-                            full in order to stop trash overflow.
+                            <b>Redesign 1</b> In order to improve upon the
+                            existing trash cans in cities like Boston, I set out
+                            to redesign a new one that avoided the existing
+                            problems. Currenlty many of the trash cans are
+                            overflowing with trash, get the solar panels blocked
+                            by snow, and do not utilize space effectively. My
+                            first redesign features a hinged panel with a lock
+                            instead of the "drawer" style present on current
+                            trashcans. The flap is locked when not in use in
+                            order to keep animals out and trash in. The lock is
+                            released with a button on the flap. Additionally
+                            this flap can lock when the trashcan is full in
+                            order to stop trash overflow.
                         </figcaption>
                     </figure>
 
@@ -392,14 +570,61 @@
                             underground storage for higher capacity. I made the
                             top of the trashcan slanted in order to discourage
                             trash being placed there in the event that the trash
-                            can is full. Lastly, I added a wifi enabled
+                            can is full and stop snow from sticking to the top
+                            so easily. Lastly, I added a wifi enabled
                             microcontroller that can send the trash can's status
                             to waste management companies, in order to optimize
-                            collection routes.
+                            collection routes. With these added features, the
+                            existing problems are effectively solved.
                         </figcaption>
                     </figure>
                 </div>
             </section>
+            <section id="hot-plate">
+                <h2>Hot Plate</h2>
+                <div class="img-flex">
+                    <figure width="30%">
+                        <img
+                            src="img/hot-plate.png"
+                            style="width: 55%"
+                            alt=""
+                        />
+                        <figcaption style="width: 70%">
+                            <b>Hot Plate</b> Certain plastics can be melted at
+                            rather low temperatures (~100 degrees Celcius) and
+                            then be molded and cooled into a specific shape. The
+                            melting process for this plastic often includes
+                            having to boil water, submerge the plastic, and
+                            remove it after it has softened; this requires a
+                            large amount of tools and lengthy clean up process.
+                            My goal is to improve the ease of this process. I
+                            initially knew that nichrome wire can be used to
+                            heat things up, but I thought there should be an
+                            insulator in order to stop from burning ones hands.
+                            I sketched a possible design (on the right) then
+                            began to piece it together. I threaded nichrome wire
+                            through a silicon mold in order to make a hotplate.
+                            After making an aluminium plate with a non
+                            conductive bottom out of foil and tape, I was able
+                            to successfully melt the plastic by running current
+                            through the nichrome wire and setting the plate on
+                            top. The base was not too hot and was moveable with
+                            my bare hands. The plastic could be grabbed out of
+                            the plate much more easily than out of boiling
+                            water.
+                        </figcaption>
+                    </figure>
+                    <figure style="width: 70%">
+                        <img
+                            src="img/hot-plate-sketch.png"
+                            style="width: 90%"
+                            alt=""
+                        />
+                        <figcaption><b>Hotplate sketch</b></figcaption>
+                    </figure>
+                </div>
+            </section>
+
             <section id="misc">
                 <h2>Miscellaneous</h2>
                 <div class="img-flex">
@@ -407,12 +632,17 @@
                         <img src="img/phone-stand.png" alt="" />
                         <figcaption>
                             <b>Phone Stand</b>
-                            I first scored a sheet of acrylic into roughly a 2x5
-                            inch rectangle; then I used a clamp to hold the
-                            piece so I could break along the cuts. After that I
-                            used a heat gun to heat up and bend the acrylic into
-                            the desired shape. Finally, I used a file to deburr
-                            the edges.
+                            In order to be able to watch videos hands free, I
+                            was tasked with making a phone stand. I thought that
+                            the simpler the shape the easier it will be to bend
+                            acryllic into, so I first scored a sheet of acrylic
+                            into roughly a 2x5 inch rectangle; then I used a
+                            clamp to hold the piece so I could break along the
+                            cuts. After that I used a heat gun to heat up and
+                            bend the acrylic into the desired shape. Finally, I
+                            used a file to deburr the edges. I placed my phone
+                            in the stand and it successfullly held it in the
+                            desired postion.
                         </figcaption>
                     </figure>
                     <figure></figure>
